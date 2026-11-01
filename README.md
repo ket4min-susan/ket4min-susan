@@ -17,7 +17,7 @@ Independent systems engineer and protocol security researcher focusing on state-
   - **Tick-Delta Arithmetic & Trigger Preservation (`#85`, `#87`, `#89`):** Widened `int24` tick-delta and tolerance arithmetic prior to clamping; preserved surviving `AUTO_RANGE` / `AUTO_LEVERAGE` mode triggers when remint paths fail.
 
 - **Compiler Ownership & Borrow Verification (`limitlessprojects/Go-Hybrid`)**
-  - **13/13 Merged Compiler Patches (`#2387`–`#2625`) + Open `#2707`:** Enforced `O8` slot-loan move invariants across closures, pointer type aliases, parallel key writes, and loop back-edges in `hy-check` and `hy-emit`.
+  - **14/14 Merged Compiler Patches (`#2387`–`#2707`, landed `78a69f2`) + Active `#2718`, `#2726`, `#2741`, `#2752`:** Enforced `O8` slot-loan move invariants across closures, pointer type aliases, parallel key writes, loop back-edges, `BorrowHandle` escape windows, and `A5` foreign-escape closure captures in `hy-check` and `hy-emit`.
 
 ---
 
