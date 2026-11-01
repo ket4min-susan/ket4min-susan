@@ -18,7 +18,7 @@ Independent systems engineer and protocol security researcher focusing on state-
   - **Tick-Delta Arithmetic & Trigger Preservation (`#85`, `#87`, `#89`):** Widened `int24` tick-delta and tolerance arithmetic prior to clamping; preserved surviving `AUTO_RANGE` / `AUTO_LEVERAGE` mode triggers when remint paths fail.
 
 - **Compiler Ownership & Borrow Verification (`limitlessprojects/Go-Hybrid`)**
-  - **16/16 Merged Compiler Patches (`#2387`–`#2752`) + Active `#2718`, `#2741`, `#2756`, `#2781`, `#2785`, `#2798`:** Enforced `O8` slot-loan move invariants across closures (`#2798` `HYB-E2010`), pointer type aliases (`#2707`), parallel key writes, loop back-edges (`#2625`), `A5` foreign-escape closure captures (`#2726`), `E11` `try_context` handlers (`#2752`), receive operands (`#2781`), and composite range iterables (`#2785`) in `hy-check` and `hy-emit`.
+  - **16/16 Merged Compiler Patches (`#2387`–`#2752`) + Active `#2718`, `#2741`, `#2756`, `#2781`, `#2785`, `#2798`, `#2807`:** Enforced `O8` slot-loan move invariants across closures (`#2798` `HYB-E2010`), pointer type aliases (`#2707`), parallel key writes, loop back-edges (`#2625`), `A5` foreign-escape closure captures (`#2726`), `E11` `try_context` handlers (`#2752`), receive operands (`#2781`), composite range iterables (`#2785`), and `N5` array pointer/partial zero-init lowering (`#2807`) in `hy-check` and `hy-emit`.
 
 ---
 
