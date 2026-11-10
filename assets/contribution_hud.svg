@@ -1,59 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" height="100%">
-  <defs>
-    <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06070B"/>
-      <stop offset="50%" stop-color="#0C0E16"/>
-      <stop offset="100%" stop-color="#06070B"/>
-    </linearGradient>
-    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7A5C22" stop-opacity="0.2"/>
-      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#7A5C22" stop-opacity="0.2"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%">
+  <rect width="880" height="140" rx="10" fill="#08090E" stroke="#262936" stroke-width="1.5"/>
 
-  <rect width="1200" height="260" rx="12" fill="url(#hudBg)" stroke="#D4AF37" stroke-width="0.9" stroke-opacity="0.45"/>
-
-  <text x="35" y="36" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700" fill="#D4AF37" letter-spacing="3">
-    02 // VERIFIED TELEMETRY &amp; INVARIANT BENCHMARKS
-  </text>
-  <text x="1165" y="36" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#8C7A56" text-anchor="end" letter-spacing="2">
-    SIGNAL INTEGRITY: 100% // NOISE FLOOR: -144 dBFS
-  </text>
-  <line x1="35" y1="48" x2="1165" y2="48" stroke="url(#goldLine)" stroke-width="0.8"/>
-
-  <!-- 4 Metric Columns -->
-  <g transform="translate(35, 75)" font-family="'JetBrains Mono', Consolas, monospace">
-    <rect width="265" height="108" rx="6" fill="#08090F" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.35"/>
-    <text x="20" y="30" font-size="10" fill="#8C7A56" letter-spacing="2">UPSTREAM PRs &amp; AUDITS</text>
-    <text x="20" y="68" font-family="'Cinzel', serif" font-size="32" font-weight="700" fill="#FFF3C4">60+</text>
-    <text x="20" y="92" font-size="10" fill="#10B981">Rust · Solidity · Go Compilers</text>
+  <!-- Stat 1 -->
+  <g transform="translate(20, 20)" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <rect width="268" height="100" rx="8" fill="#0D0F17" stroke="#222533" stroke-width="1"/>
+    <text x="24" y="34" font-size="13.5" font-weight="700" fill="#9CA3AF">UPSTREAM PATCHES</text>
+    <text x="24" y="78" font-size="34" font-weight="800" fill="#F3F4F6">60+ PRs</text>
   </g>
 
-  <g transform="translate(322, 75)" font-family="'JetBrains Mono', Consolas, monospace">
-    <rect width="265" height="108" rx="6" fill="#08090F" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.35"/>
-    <text x="20" y="30" font-size="10" fill="#8C7A56" letter-spacing="2">WARM HOOK OVERHEAD</text>
-    <text x="20" y="68" font-family="'Cinzel', serif" font-size="32" font-weight="700" fill="#FFF3C4">~2,600 GAS</text>
-    <text x="20" y="92" font-size="10" fill="#D4AF37">Atomic ERC-4626 Clamped Exit</text>
+  <!-- Stat 2 -->
+  <g transform="translate(306, 20)" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <rect width="268" height="100" rx="8" fill="#0D0F17" stroke="#222533" stroke-width="1"/>
+    <text x="24" y="34" font-size="13.5" font-weight="700" fill="#9CA3AF">ERC-4626 HOOK EXIT</text>
+    <text x="24" y="78" font-size="34" font-weight="800" fill="#D4AF37">~2.6k gas</text>
   </g>
 
-  <g transform="translate(610, 75)" font-family="'JetBrains Mono', Consolas, monospace">
-    <rect width="265" height="108" rx="6" fill="#08090F" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.35"/>
-    <text x="20" y="30" font-size="10" fill="#8C7A56" letter-spacing="2">WASM RECURSION GUARD</text>
-    <text x="20" y="68" font-family="'Cinzel', serif" font-size="32" font-weight="700" fill="#FFF3C4">DEPTH ≤ 32</text>
-    <text x="20" y="92" font-size="10" fill="#D4AF37">Pre-Metered CBOR Stack Safety</text>
+  <!-- Stat 3 -->
+  <g transform="translate(592, 20)" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <rect width="268" height="100" rx="8" fill="#0D0F17" stroke="#222533" stroke-width="1"/>
+    <text x="24" y="34" font-size="13.5" font-weight="700" fill="#9CA3AF">CBOR STACK GUARD</text>
+    <text x="24" y="78" font-size="34" font-weight="800" fill="#F3F4F6">Depth ≤ 32</text>
   </g>
-
-  <g transform="translate(898, 75)" font-family="'JetBrains Mono', Consolas, monospace">
-    <rect width="267" height="108" rx="6" fill="#08090F" stroke="#D4AF37" stroke-width="0.6" stroke-opacity="0.35"/>
-    <text x="20" y="30" font-size="10" fill="#8C7A56" letter-spacing="2">DSP STREAM DEDUP I/O</text>
-    <text x="20" y="68" font-family="'Cinzel', serif" font-size="32" font-weight="700" fill="#FFF3C4">0 BYTES</text>
-    <text x="20" y="92" font-size="10" fill="#10B981">Pure RAM Pipe + SQLite WAL</text>
-  </g>
-
-  <!-- Bottom Minimalist Acoustic / Cryptographic Pulse Line -->
-  <path d="M 35 218 L 380 218 L 395 206 L 410 230 L 425 198 L 440 236 L 455 204 L 470 226 L 485 214 L 500 218 L 700 218 L 715 208 L 730 228 L 745 196 L 760 234 L 775 210 L 790 222 L 805 218 L 1165 218" fill="none" stroke="url(#goldLine)" stroke-width="1.2"/>
-  <text x="600" y="244" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" fill="#7D725D" text-anchor="middle" letter-spacing="3">
-    "TRUST THE STATE MACHINE, VERIFY THE CALLDATA, RESPECT THE WAVEFORM."
-  </text>
 </svg>
