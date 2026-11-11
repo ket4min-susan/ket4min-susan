@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" width="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D1017"/>
+      <stop offset="100%" stop-color="#080A0F"/>
+    </linearGradient>
+    <linearGradient id="topGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5A93C" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#E5A93C" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#58A6FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Minimalist Terminal Frame -->
+  <rect width="880" height="510" rx="12" fill="url(#termBg)"/>
+  <rect x="1" y="1" width="878" height="508" rx="11" fill="none" stroke="#1E2430" stroke-width="1.5"/>
+  <line x1="40" y1="1" x2="480" y2="1" stroke="url(#topGlow)" stroke-width="2"/>
+
+  <!-- Subtle Window Header Bar -->
+  <line x1="1" y1="46" x2="879" y2="46" stroke="#171C26" stroke-width="1.2"/>
+  <circle cx="28" cy="24" r="4.5" fill="#2A3140"/>
+  <circle cx="44" cy="24" r="4.5" fill="#2A3140"/>
+  <circle cx="60" cy="24" r="4.5" fill="#2A3140"/>
+  <text x="440" y="29" font-family="ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace" font-size="13" fill="#6E7681" text-anchor="middle">
+    ket4min@lab: ~/profile (zsh)
+  </text>
+
+  <!-- Section 1: Identity & Clear Value Proposition -->
+  <text x="44" y="88" font-family="ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace" font-size="15" font-weight="600" fill="#7EE787">
+    $ whoami
+  </text>
+
+  <text x="44" y="140" font-family="ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace" font-size="44" font-weight="800" fill="#F0F6FC" letter-spacing="0.5">
+    ket4min-susan
+  </text>
+  <!-- Artistic Amber Terminal Cursor Block -->
+  <rect x="412" y="106" width="16" height="36" rx="2" fill="#E5A93C" opacity="0.9"/>
+
+  <!-- Plain-English Headline (Instant clarity for Recruiters & Hiring Managers) -->
+  <text x="44" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="19.5" font-weight="600" fill="#E6EDF3">
+    Systems &amp; Security Engineer — Smart Contracts, Compilers &amp; High-Speed Backend
+  </text>
+  <text x="44" y="206" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14.5" fill="#8B949E">
+    Core stack: Rust · Go · Solidity · C++20 / CUDA
+  </text>
+
+  <line x1="44" y1="232" x2="836" y2="232" stroke="#191F2B" stroke-width="1.2"/>
+
+  <!-- Section 2: Two-Column Split (Recruiter-Readable Capabilities + Technical Depth) -->
+  <text x="44" y="264" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="15" font-weight="600" fill="#79C0FF">
+    $ cat ./what-i-build
+  </text>
+
+  <!-- Left Column -->
+  <g transform="translate(44, 286)">
+    <text x="0" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16.5" font-weight="700" fill="#F0F6FC">
+      1. Blockchain &amp; Smart Contract Security
+    </text>
+    <text x="0" y="42" font-family="ui-monospace, Consolas, monospace" font-size="13.8" fill="#8B949E">
+      Auditing DeFi vaults, L1/L2 consensus &amp; ZK proofs
+    </text>
+
+    <text x="0" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16.5" font-weight="700" fill="#F0F6FC">
+      2. Compiler &amp; Memory-Safety Tooling
+    </text>
+    <text x="0" y="108" font-family="ui-monospace, Consolas, monospace" font-size="13.8" fill="#8B949E">
+      Static analysis &amp; borrow-checking passes in Go/Rust
+    </text>
+  </g>
+
+  <!-- Subtle Vertical Divider -->
+  <line x1="454" y1="282" x2="454" y2="408" stroke="#191F2B" stroke-width="1.2"/>
+
+  <!-- Right Column -->
+  <g transform="translate(480, 286)">
+    <text x="0" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16.5" font-weight="700" fill="#F0F6FC">
+      3. High-Performance Audio &amp; GPU Systems
+    </text>
+    <text x="0" y="42" font-family="ui-monospace, Consolas, monospace" font-size="13.8" fill="#8B949E">
+      Zero-disk audio fingerprinting &amp; CUDA solvers
+    </text>
+
+    <text x="0" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16.5" font-weight="700" fill="#F0F6FC">
+      4. On-Chain Forensics &amp; Risk Guards
+    </text>
+    <text x="0" y="108" font-family="ui-monospace, Consolas, monospace" font-size="13.8" fill="#8B949E">
+      Pre-sign Permit2 decoders &amp; token freeze monitors
+    </text>
+  </g>
+
+  <line x1="44" y1="430" x2="836" y2="430" stroke="#191F2B" stroke-width="1.2"/>
+
+  <!-- Section 3: Clean Impact Bar (Meaningful to both Recruiters & Engineers) -->
+  <g transform="translate(44, 472)" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <text x="0" y="0" font-size="20" font-weight="800" fill="#F0F6FC">60+ Merged PRs</text>
+    <text x="178" y="0" font-size="13.5" fill="#6E7681">in production repos</text>
+
+    <text x="350" y="0" font-size="20" font-weight="800" fill="#E5A93C">~2.6k gas</text>
+    <text x="468" y="0" font-size="13.5" fill="#6E7681">Uniswap v4 safe exit</text>
+
+    <text x="645" y="0" font-size="20" font-weight="800" fill="#7EE787">Zero-Disk</text>
+    <text x="762" y="0" font-size="13.5" fill="#6E7681">RAM DSP</text>
+  </g>
+</svg>
